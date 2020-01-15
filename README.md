@@ -1,7 +1,7 @@
 # Double-Observer-Detection-Estimation
 Functions for estimating detection rate from two-occasion observation data (double observer).  
 
-## Function for making matches
+## Functions for making matches
 Some functions for determining a match in double observer data from front seat and back seat aerial observations used for estimating detection probability. These function would on files structure that might be different than currently used (i.e., the quality control process and column names of the input data may have changed).
 
 You will need to read the code to understand the function, there is only minimal and insufficient documentation and comments within in the function code. A brief description of each file is :
