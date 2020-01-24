@@ -15,3 +15,6 @@ You will need to read the code to understand the function, there is only minimal
 **formatDDdata.R** is a function that cleans up double observer data for use in the other function. Structure of this old data is different than current observation data, so this function might not be relavent for double observer data collected after 2016. However, this function serve to document some of the quality control isses in the 2015 and 2016 data.
 
 **matching_matrix.csv** is a file that defines a matrix of front seat and back seat combinations of unit and group size can reasonably be considered matches. It might be better to program the match function so that a matrix like this could be input to define matches, rather than a large series of if then statments. This would make the function more general and probably a lot easier to program.
+
+## Code for estimating (and plotting) detection
+**ACPanalysis.R** This code was written for the Arctic Coast Plain Survey data *before* current (circa 2018) QA/QC procures where in place. Thus, some parts are obsolete with respec to current data file. However, the JAGS models give an example of one proposed approach to estimating detection based on the that for Huggins (1989), Alho (1990), or Koneff et al. (2008).  
