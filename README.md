@@ -6,7 +6,7 @@ Some functions for determining a match in double observer data from front seat a
 
 You will need to read the code to understand the function, there is only minimal and insufficient documentation and comments within in the function code. A brief description of each file is :
 
-**DubMatch.R** is a minial function that makes the most strict assumption about matches. There is no identification error and unit = 'open' and 'single' are treated as matches. The time window for matches is set as input to the function, default is appropriate for a plane moving at about 45 meters per second. This function should be tested to ensure it works as intended.
+**DubMatch.R** is a function that makes the most strict assumptions about matches. There is no identification error and unit = 'open' and 'single' are treated as matches. The time window for matches is set as input to the function, default is appropriate for a plane moving at about 45 meters per second. This function should be tested to ensure it works as intended.
 
 **DubMatch2.R** is a liberal matching scheme where different units can be use by front or back seat observes and still a match is allow. See function for all combinations but include units with multiple 'singles' or 'opens' seen in the time window, and also allow 'singles' and 'floked drakes' to be matched for various group sizes. Allows 'singles' to be matched to 'pairs' and small flocks within 3 to 5 to match even if number is not exact. Any group > 5 is a match if the unit combination is reasonable. See code.
 
